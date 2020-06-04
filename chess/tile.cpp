@@ -6,7 +6,7 @@
 extern Game *game;
 Tile::Tile(QGraphicsItem *parent):QGraphicsRectItem(parent) {
     //making the Square CHess Box
-    setRect(0,0,100,100);
+    setRect(0,0,TILE_WIDTH,TILE_WIDTH);
     brush.setStyle(Qt::SolidPattern);
     setZValue(-1);
     set_has_piece(false);

@@ -56,7 +56,8 @@ void Piece::link_image() {
                             ":/pieces/images/white_bishop.png",
                             ":/pieces/images/white_knight.png",
                             ":/pieces/images/white_pawn.png"};
-    setPixmap(QPixmap(file_paths[code]));
+    QPixmap tile_img = QPixmap(file_paths[code]);
+    setPixmap(tile_img);
 }
 
 void Piece::is_move_valid(int r, int c) {
